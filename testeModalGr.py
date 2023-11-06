@@ -35,11 +35,11 @@ def calcular_notas(valor):
 def exibir_opcoes_retirada(notas_maior_valor, notas_menor_valor):
     print("Notas de maior valor:")
     for nota in notas_maior_valor:
-        print(f"➢ {nota} x 100 reais" if nota == 100 else f"➢ {nota} x 50 reais")
+        print(f"> {nota} x 100 reais" if nota == 100 else f"> {nota} x 50 reais")
 
     print("\nNotas de menor valor:")
     for nota in notas_menor_valor:
-        print(f"➢ {nota} x 20 reais" if nota == 20 else f"➢ {nota} x 10 reais" if nota == 10 else f"➢ {nota} x 5 reais" if nota == 5 else f"➢ {nota} x 2 reais")
+        print(f"> {nota} x 20 reais" if nota == 20 else f"> {nota} x 10 reais" if nota == 10 else f"> {nota} x 5 reais" if nota == 5 else f"> {nota} x 2 reais")
 
 # Solicitar informações do colaborador
 nome = input("Digite o nome do colaborador: ")
